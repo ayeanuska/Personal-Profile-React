@@ -1,6 +1,10 @@
 import "./App.css";
 
 import anu from "./assets/anu.jpeg";
+import recipeGallery from "./assets/recipeGallery.png";
+import notToDoList from "./assets/notToDoList.png";
+import tempConverter from "./assets/tempConverter.png";
+import prankCalc from "./assets/PrankCalculator.png";
 
 function App() {
   return (
@@ -47,7 +51,7 @@ function App() {
           <div className="grid hero">
             <div className="left flex">
               <div>
-                Hi I`m
+                Hi I`m <br />
                 <span>Anuska Shrestha</span>
               </div>
               <div className="tag">Full stack developer</div>
@@ -57,7 +61,7 @@ function App() {
                 building connections
               </p>
               <div>
-                <a href={anu} download>
+                <a href={anu}>
                   <button>
                     Download Cv <i className="fa-solid fa-download"></i>
                   </button>
@@ -65,7 +69,7 @@ function App() {
               </div>
             </div>
             <div className="right flex">
-              <img src="assets/IMG_7988 Small.jpeg" alt="anuska's img" />
+              <img src={anu} alt="anuska's img" />
             </div>
           </div>
         </section>
@@ -151,16 +155,12 @@ function App() {
           <div className="grid project-container">
             <div className="project-card">
               <div className="top">
-                <img
-                  src="./assets/personal website.jpeg"
-                  alt="anuska's portfolio "
-                  width="100%"
-                />
+                <img src={recipeGallery} alt="recipe gallery " width="100%" />
               </div>
 
               <div className="bottom container">
                 <div className="links">
-                  <a href="https://github.com/ayeanuska">
+                  <a href="https://github.com/ayeanuska/Recipe-Page">
                     <i
                       className="fa-brands fa-github"
                       style={{ color: "black" }}
@@ -171,22 +171,18 @@ function App() {
                     <i className="fa-brands fa-chrome"></i>
                   </a>
                 </div>
-                <h3>Personal website</h3>
+                <h3>Recipe Gallery</h3>
                 <p>Techstack, Html, Css, JavaScript</p>
               </div>
             </div>
 
             <div className="project-card">
               <div className="top">
-                <img
-                  src="./assets/portfolio website.jpeg"
-                  alt="anuska's portfolio "
-                  width="100%"
-                />
+                <img src={notToDoList} alt="Not-To-Do-List " width="100%" />
               </div>
               <div className="bottom container">
                 <div className="links">
-                  <a href="https://github.com/ayeanuska">
+                  <a href="https://github.com/ayeanuska/not-to-do-list">
                     <i
                       className="fa-brands fa-github"
                       style={{ color: "black" }}
@@ -197,22 +193,17 @@ function App() {
                     <i className="fa-brands fa-chrome"></i>
                   </a>
                 </div>
-                <h3>Portfolio</h3>
+                <h3>Not-To-Do-List</h3>
                 <p>Techstack, Html, Css, JavaScript</p>
               </div>
             </div>
-
             <div className="project-card">
               <div className="top">
-                <img
-                  src="./assets/portfolio website.jpeg"
-                  alt="anuska's portfolio "
-                  width="100%"
-                />
+                <img src={prankCalc} alt="Prank Calc " width="100%" />
               </div>
               <div className="bottom container">
                 <div className="links">
-                  <a href="https://github.com/ayeanuska">
+                  <a href="https://github.com/ayeanuska/PrankCalculator">
                     <i
                       className="fa-brands fa-github"
                       style={{ color: "black" }}
@@ -223,21 +214,21 @@ function App() {
                     <i className="fa-brands fa-chrome"></i>
                   </a>
                 </div>
-                <h3>Portfolio</h3>
+                <h3>Prank Calculator</h3>
                 <p>Techstack, Html, Css, JavaScript</p>
               </div>
             </div>
             <div className="project-card">
               <div className="top">
                 <img
-                  src="./assets/personal website.jpeg"
-                  alt="anuska's portfolio "
+                  src={tempConverter}
+                  alt="Temperature Converter "
                   width="100%"
                 />
               </div>
               <div className="bottom container">
                 <div className="links">
-                  <a href="https://github.com/ayeanuska">
+                  <a href="https://github.com/ayeanuska/TemperatureConverter">
                     <i
                       className="fa-brands fa-github"
                       style={{ color: "black" }}
@@ -248,7 +239,7 @@ function App() {
                     <i className="fa-brands fa-chrome"></i>
                   </a>
                 </div>
-                <h3>Personal Website</h3>
+                <h3>Temperature Converter</h3>
                 <p>Techstack, Html, Css, JavaScript</p>
               </div>
             </div>
@@ -312,7 +303,10 @@ function App() {
           </div>
           <h3>OR</h3>
           <div className="flex-centre">
-            <a href="" className="email-section flex-centre">
+            <a
+              href="mailto:youremail@gmail.com"
+              className="email-section flex-centre"
+            >
               <span>youremail@gmail.com</span>
               <div className="email-icon flex-centre">
                 <i className="fa-solid fa-paper-plane"></i>
