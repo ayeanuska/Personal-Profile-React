@@ -3,15 +3,14 @@ import recipeGallery from "../assets/recipeGallery.png";
 import notToDoList from "../assets/notToDoList.png";
 import tempConverter from "../assets/tempConverter.png";
 import prankCalc from "../assets/PrankCalculator.png";
+import Title from "./Title";
 
 const Project = () => {
   return (
     <>
       {" "}
       <section className="projects container" id="projects">
-        <h2 className="tittle">
-          <span>My Projects</span>
-        </h2>
+        <Title title="Projects" />
 
         <div className="grid project-container">
           <div className="project-card">

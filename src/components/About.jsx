@@ -1,14 +1,13 @@
 import React from "react";
 import anu from "../assets/anu.jpeg";
+import Title from "./Title";
 
 const About = () => {
   return (
     <>
       {" "}
       <section className="about">
-        <h2 className="tittle">
-          <span>About me</span>
-        </h2>
+        <Title title="About Me" />
 
         <div className="container flex about-content" id="about">
           <div className="flex-centre myimg">

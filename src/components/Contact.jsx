@@ -1,13 +1,12 @@
 import React from "react";
+import Title from "./Title";
 
 const Contact = () => {
   return (
     <>
       {" "}
       <section className="contact container" id="contacts">
-        <h2 className="tittle">
-          <span>Contact me</span>
-        </h2>
+        <Title title="Contact Me" />
         <div className="social flex">
           <a href="">
             <i className="fa-brands fa-github" style={{ color: "black" }}></i>

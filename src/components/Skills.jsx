@@ -1,13 +1,11 @@
 import React from "react";
+import Title from "./Title";
 
 const Skills = () => {
   return (
     <>
-      {" "}
       <section className="skills">
-        <h2 className="tittle">
-          <span>Skills</span>
-        </h2>
+        <Title title="Skills" />
         <div className="container flex skills-container" id="skills">
           <div>
             <i className="fa-brands fa-html5" style={{ color: "orange" }}></i>
