@@ -8,28 +8,32 @@ import Card from "./Card";
 
 const projects = [
   {
-    image: "recipeGallery",
+    image: recipeGallery,
     github: "https://github.com/ayeanuska/Recipe-Page",
     title: "Recipe Gallery",
     descr: "Techstack, Html, Css, JavaScript",
+    url: "https://recipe-page-theta-ten.vercel.app/",
   },
   {
-    image: "notToDoList",
+    image: notToDoList,
     github: "https://github.com/ayeanuska/Recipe-Page",
     title: "Not-To-Do-List",
     descr: "Techstack, Html, Css, JavaScript",
+    url: "https://ayeanuska.github.io/not-to-do-list/",
   },
   {
-    image: "prankCalc",
+    image: prankCalc,
     github: "https://github.com/ayeanuska/PrankCalculator",
     title: "Prank Calculator",
     descr: "Techstack, Html, Css, JavaScript",
+    url: "https://ayeanuska.github.io/PrankCalculator/",
   },
   {
-    image: "tempConverter",
+    image: tempConverter,
     github: "https://github.com/ayeanuska/TemperatureConverter",
     title: "Temperature Converter",
     descr: "Techstack, Html, Css, JavaScript",
+    url: "https://temperature-converter-snowy.vercel.app/",
   },
 ];
 
@@ -40,8 +44,6 @@ const Project = () => {
         <Title title="Projects" />
 
         <div className="grid project-container">
-          <Card />
-
           {projects.map((projects, i) => (
             <Card key={i} {...projects} />
           ))}

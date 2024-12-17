@@ -51,12 +51,12 @@ a {
   color: inherit;
 }
 
-.tittle {
+.title {
   text-align: center;
   margin-bottom: 3rem;
 }
 
-.tittle span {
+.title span {
   border-bottom: 3px solid var(--buttoncolor);
 }
 

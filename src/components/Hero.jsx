@@ -8,7 +8,7 @@ const Hero = () => {
         <div class="grid hero">
           <div class="left flex">
             <div>
-              Hi I'm
+              Hello I `am <br />
               <span>Anuska Shrestha</span>
             </div>
             <div class="tag">Full stack developer</div>

@@ -20,6 +20,10 @@ const Skills = () => {
             <span> JavaScript</span>
           </div>
           <div>
+            <i className="fa-brands fa-react" style={{ color: "yellow" }}></i>
+            <span> React</span>
+          </div>
+          <div>
             <i className="fa-brands fa-github" style={{ color: "black" }}></i>
             <span>GitHUb</span>
           </div>
