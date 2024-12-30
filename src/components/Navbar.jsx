@@ -5,37 +5,31 @@ const Navbar = () => {
   return (
     <>
       <header>
-        <div className="header container flex">
+        <div className="header flex expand-lg sticky-top">
           <div className="logo flex">
             <div>Anuska</div>
             <div className="line">Full stack dev.</div>
           </div>
           <div className="menu">
             <ul className="flex navigation">
-              <li>
-                <Link to="/hero">Home</Link>
-                {/* <a href="/hero">Home</a> */}
-              </li>
-              <li>
-                <Link to="/skills">Skills</Link>
+              <Link to="/hero">Home</Link>
+              {/* <a href="/hero">Home</a> */}
 
-                {/* <a href="/skills">Skills</a> */}
-              </li>
-              <li>
-                <Link to="/projects">Projects</Link>
+              <Link to="/skills">Skills</Link>
 
-                {/* <a href="/projects">Projects</a> */}
-              </li>
-              <li>
-                <Link to="/about">About</Link>
+              {/* <a href="/skills">Skills</a> */}
 
-                {/* <a href="/about">About</a> */}
-              </li>
-              <li>
-                <Link to="/contact">Contact</Link>
+              <Link to="/projects">Projects</Link>
 
-                {/* <a href="/contacts">Contact</a> */}
-              </li>
+              {/* <a href="/projects">Projects</a> */}
+
+              <Link to="/about">About</Link>
+
+              {/* <a href="/about">About</a> */}
+
+              <Link to="/contact">Contact</Link>
+
+              {/* <a href="/contacts">Contact</a> */}
             </ul>
           </div>
         </div>
