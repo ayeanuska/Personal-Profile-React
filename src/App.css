@@ -132,54 +132,50 @@ header .header {
   display: none;
 }
 /* <!-- --hero section-- --> */
+
 .hero-section {
-  margin-top: 5rem;
-  height: 60vh;
+  padding: 3rem 0;
+  background-color: var(--secondary); /* Optional background color */
 }
 
-.hero {
-  background: #9cad8936;
-  grid-template-areas: "left right";
-  padding: 2rem;
-  box-shadow: var(--shadow);
-}
-.left {
-  grid-area: left;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 10vw;
-}
-.left div span {
-  font-size: 1.3rem;
+/* Hero text styling */
+.hero-section h1 {
+  font-size: 2.5rem;
   font-weight: bold;
+  margin-bottom: 1rem;
 }
 
-.left .tag {
-  font-size: 2rem;
-  font-weight: bold;
-  letter-spacing: 2px;
+.hero-section h3 {
+  font-size: 1.5rem;
+  color: var(--buttoncolor);
+  margin-bottom: 1.5rem;
 }
 
-.left button {
-  background-color: var(--buttoncolor);
-  border: none;
-  padding: 0.8rem 2rem;
-  border-radius: 2%;
-  cursor: pointer;
+.hero-section p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
 }
 
-.right {
-  grid-area: right;
-  justify-content: end;
-  align-items: center;
+/* Hero image styling */
+.hero-image {
+  max-width: 100%; /* Makes the image responsive */
+  height: auto; /* Ensures aspect ratio is maintained */
+  object-fit: cover; /* Ensures the image fills its container */
+  border-radius: 10px;
 }
 
-.right img {
-  height: 40vh;
-}
-
-.left button {
-  background: var(--buttoncolor);
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  .hero-section h3 {
+    font-size: 1.2rem;
+  }
+  .hero-section p {
+    font-size: 0.9rem;
+  }
 }
 
 /* <!--  banner-- --> */
