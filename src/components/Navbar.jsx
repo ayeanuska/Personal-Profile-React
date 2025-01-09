@@ -1,41 +1,40 @@
 import React from "react";
+import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const ResponsiveNavbar = () => {
   return (
-    <>
-      <header>
-        <div className="header flex expand-lg sticky-top">
-          <div className="logo flex">
+    <Navbar expand="lg" sticky="top">
+      <Container>
+        <Navbar.Brand href="/">
+          <div className="logo line">
             <div>Anuska</div>
-            <div className="line">Full stack dev.</div>
+            <div>Full stack dev.</div>
           </div>
-          <div className="menu">
-            <ul className="flex navigation">
-              <Link to="/hero">Home</Link>
-              {/* <a href="/hero">Home</a> */}
-
-              <Link to="/skills">Skills</Link>
-
-              {/* <a href="/skills">Skills</a> */}
-
-              <Link to="/projects">Projects</Link>
-
-              {/* <a href="/projects">Projects</a> */}
-
-              <Link to="/about">About</Link>
-
-              {/* <a href="/about">About</a> */}
-
-              <Link to="/contact">Contact</Link>
-
-              {/* <a href="/contacts">Contact</a> */}
-            </ul>
-          </div>
-        </div>
-      </header>
-    </>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto">
+            <Nav.Link as={Link} to="/hero">
+              Home
+            </Nav.Link>
+            <Nav.Link as={Link} to="/skills">
+              Skills
+            </Nav.Link>
+            <Nav.Link as={Link} to="/projects">
+              Projects
+            </Nav.Link>
+            <Nav.Link as={Link} to="/about">
+              About
+            </Nav.Link>
+            <Nav.Link as={Link} to="/contact">
+              Contact
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 
-export default Navbar;
+export default ResponsiveNavbar;

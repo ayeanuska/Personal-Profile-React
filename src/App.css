@@ -79,7 +79,7 @@ a {
 }
 
 /* <!-- --nav bar-- --> */
-header .header {
+/* header .header {
   justify-content: center;
   align-items: center;
   padding: 1rem;
@@ -87,6 +87,12 @@ header .header {
   width: 100%;
   box-shadow: var(--shadow);
 }
+*/
+
+.navbar {
+  background-color: var(--primary);
+}
+
 .logo {
   font-size: 1.2rem;
   position: relative;
@@ -94,17 +100,17 @@ header .header {
 
 .logo :first-child {
   font-weight: bold;
-  margin-right: 1rem;
+  margin-right: 8rem;
 }
 .line::before {
   content: "";
   background: var(--buttoncolor);
   width: 4px;
-  height: 100%;
+  height: 50%;
 
   position: absolute;
   left: 40%;
-}
+} /*
 .navigation {
   list-style: none;
   font-weight: bold;
@@ -116,7 +122,7 @@ header .header {
   transition: all 0.3s;
 
   color: var(--buttoncolor);
-}
+} */
 /* 
   applying dark mode feature
    */

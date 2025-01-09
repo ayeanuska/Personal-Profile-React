@@ -1,7 +1,6 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Project from "./components/Project";
@@ -9,6 +8,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { Route, Routes } from "react-router-dom";
+import ResponsiveNavbar from "./components/Navbar";
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
         </label>
 
         {/* <!-- --nav bar-- --> */}
-        <Navbar />
+        <ResponsiveNavbar />
 
         <Routes>
           <Route path="/" element={<Hero />} />
