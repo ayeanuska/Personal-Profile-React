@@ -90,12 +90,13 @@ a {
 */
 
 .navbar {
-  background-color: var(--primary);
+  background-color: #203a43;
 }
 
 .logo {
   font-size: 1.2rem;
   position: relative;
+  color: #d6d6d6;
 }
 
 .logo :first-child {
@@ -163,6 +164,9 @@ a {
   margin-bottom: 2rem;
 }
 
+.button {
+  background-color: var(--buttoncolor);
+}
 /* Hero image styling */
 .hero-image {
   max-width: 100%; /* Makes the image responsive */
@@ -341,8 +345,8 @@ a {
 /* <!-- footer section */
 footer {
   min-height: 30vh;
-  background: #000;
-  color: white;
+  background-color: #203a43;
+  color: #d6d6d6;
   margin-top: 5rem;
   flex-direction: column;
   padding: 2rem;
@@ -362,6 +366,20 @@ footer .top ul li {
   line-height: 1.5rem;
 }
 
+/* Footer links style */
+footer .top ul li a {
+  text-decoration: none;
+  color: gray;
+  font-weight: bold;
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect */
+footer .top ul li a:hover {
+  color: #d6d6d6;
+  font-weight: bolder;
+}
+
 /* page navigation */
 
 .goUp {
@@ -374,4 +392,45 @@ footer .top ul li {
   position: fixed;
   right: 30px;
   bottom: 60px;
+}
+
+.contact .email-section {
+  text-decoration: none;
+}
+.contact .email-section:hover {
+  font-weight: bolder;
+  transition: all 0.3s;
+}
+.contact .email-icon {
+  background: #e6e2e278;
+}
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10vw;
+  height: 20vh;
+
+  background-color: var(--primary);
+
+  border-radius: 25px;
+  text-decoration: none;
+
+  margin: 60px 0px;
+  transition: transform 0.3s, background-color 0.3s; /* Smooth hover effect */
+}
+
+.icon-box i {
+  font-size: 70px;
+}
+
+.icon-box:hover {
+  transform: scale(1.1); /* Slightly enlarges icon on hover */
+  background-color: #cbdebf;
+}
+
+.social {
+  display: flex;
+  gap: 10px; /* Space between icons */
 }

@@ -8,20 +8,20 @@ const Contact = () => {
       <section className="contact container" id="contacts">
         <Title title="Contact Me" />
         <div className="social flex">
-          <a href="">
-            <i className="fa-brands fa-github" style={{ color: "black" }}></i>
-          </a>
-          <a href="">
+          <a href="" className="icon-box">
+            <i className="fa-solid fa-mobile "></i>
+          </a>{" "}
+          <a href="" className="icon-box">
             <i className="fa-brands fa-linkedin"></i>
           </a>
-          <a href="">
+          <a href="" className="icon-box">
+            <i className="fa-brands fa-github" style={{ color: "black" }}></i>
+          </a>
+          <a href="" className="icon-box">
             <i className="fa-brands fa-facebook"></i>
           </a>
-          <a href="">
-            <i className="fa-solid fa-mobile"></i>
-          </a>
         </div>
-        <h3>OR</h3>
+        <h3>or reach me out</h3>
         <div className="flex-centre">
           <a
             href="mailto:youremail@gmail.com"
