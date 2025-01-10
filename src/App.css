@@ -111,22 +111,16 @@ a {
 
   position: absolute;
   left: 40%;
-} /*
-.navigation {
-  list-style: none;
+}
+.navbar .nav-link {
+  color: whitesmoke;
   font-weight: bold;
-  margin-left: 50vw;
+  transition: color 0.3s ease;
 }
 
-.navigation li:hover {
-  color: var(--buttoncolor);
-  transition: all 0.3s;
-
-  color: var(--buttoncolor);
-} */
-/* 
-  applying dark mode feature
-   */
+.navbar .nav-link:hover {
+  color: gray;
+}
 
 #mode:checked + .wrapper {
   zoom: 1;
