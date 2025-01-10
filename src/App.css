@@ -235,7 +235,23 @@ a {
 }
 
 .skills-container > div i {
-  font-size: 3rem;
+  font-size: 6rem;
+}
+
+.skill-box {
+  background-color: white;
+  border-radius: 25%;
+  padding: 10px;
+
+  display: inline-block;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px 10px;
+  font-size: 10rem;
+  transition: transform 0.3s ease;
+}
+
+.skill-box:hover {
+  transform: scale(1.2); /* Slight zoom on hover */
 }
 
 /* <!-- --projects-- --> */
@@ -308,6 +324,9 @@ a {
 }
 .contact .social {
   font-size: 4rem;
+  display: flex;
+  gap: 8px;
+
   justify-content: space-between;
 }
 
@@ -321,14 +340,22 @@ a {
   color: white;
   padding: 1rem 2rem;
   border-radius: 40px;
+
+  text-decoration: none;
 }
 
 .contact .email-section span {
   font-size: 1rem;
 }
 
+.contact .email-section:hover {
+  font-weight: bolder;
+  transition: all 0.3s;
+}
+
 .contact .email-icon {
-  background: var(--buttoncolor);
+  background: #e6e2e278;
+
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
@@ -336,6 +363,34 @@ a {
 
   box-shadow: var(--shadow);
 }
+
+.icon-box {
+  display: inline-block;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px 0px;
+  font-size: 2%;
+  transition: transform 0.3s ease;
+
+  border-radius: 25%;
+  padding: 10px;
+
+  background-color: whitesmoke;
+
+  text-decoration: none;
+
+  /* margin: 60px 0px; */
+  transition: transform 0.3s, background-color 0.3s; /* Smooth hover effect */
+}
+
+.icon-box i {
+  font-size: 90px;
+}
+
+.icon-box:hover {
+  transform: scale(1.1); /* Slightly enlarges icon on hover */
+  background-color: #cbdebf;
+}
+
 /* <!-- footer section */
 footer {
   min-height: 30vh;
@@ -386,45 +441,4 @@ footer .top ul li a:hover {
   position: fixed;
   right: 30px;
   bottom: 60px;
-}
-
-.contact .email-section {
-  text-decoration: none;
-}
-.contact .email-section:hover {
-  font-weight: bolder;
-  transition: all 0.3s;
-}
-.contact .email-icon {
-  background: #e6e2e278;
-}
-
-.icon-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 10vw;
-  height: 20vh;
-
-  background-color: var(--primary);
-
-  border-radius: 25px;
-  text-decoration: none;
-
-  margin: 60px 0px;
-  transition: transform 0.3s, background-color 0.3s; /* Smooth hover effect */
-}
-
-.icon-box i {
-  font-size: 70px;
-}
-
-.icon-box:hover {
-  transform: scale(1.1); /* Slightly enlarges icon on hover */
-  background-color: #cbdebf;
-}
-
-.social {
-  display: flex;
-  gap: 10px; /* Space between icons */
 }
